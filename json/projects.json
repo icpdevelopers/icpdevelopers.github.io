@@ -1,13 +1,12 @@
 {
-    "2024": [
+    "2025": [
         {
-            "year": 2024,
-            "title": "Project 2",
+            "title": "Project 1",
             "description": "Description of project 2",
-            "image": "https://example.com/image2.jpg",
-            "link": "https://example.com/project2",
-            "github":"",
-            "tag":""
+            "image": "https://dummyimage.com/600x400/000/fff",
+            "live_link": "https://live.com/project1",
+            "source_code":"https://github.com/icpdevelopers/icpdevelopers.github.io/",
+            "tag":"dummy"
         }
     ]
 }

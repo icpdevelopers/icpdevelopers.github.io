@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+  }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  .portfolio-min-h-screen {
+    min-height: 92vh;
+  }
+
+  .portfolio-bg-black {
+    background-color: black;
+  }
+
+  .portfolio-p-8 {
+    padding: 2rem;
+  }
+
+  .portfolio-flex {
+    display: flex;
+  }
+
+  .portfolio-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .portfolio-gap-4 {
+    gap: 1rem;
+  }
+
+  .portfolio-mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  button.portfolio-bg-white {
+    background-color: white;
+    color: black;
+  }
+
+  button.portfolio-text-white {
+    color: white;
+  }
+
+  button.portfolio-text-white-80 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .portfolio-grid {
+    display: grid;
+  }
+
+  .portfolio-gap-6 {
+    gap: 1.5rem;
+  }
+
+
+
+  .portfolio-lg-grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-group {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: #181818;
+    border:2px solid rgba(51, 50, 50, 0.559);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    height: 350px;
+    max-width: 1000px;
+}
+
+  .portfolio-group:hover .portfolio-scale-hover {
+    transform: scale(1.05);
+  }
+
+  .portfolio-scale-hover {
+    transition: transform 0.3s;
+  }
+
+  .portfolio-aspect-3-2 {
+    aspect-ratio: 3 / 2;
+  }
+
+  .portfolio-object-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-bg-gradient-to-t {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  }
+
+  .portfolio-absolute {
+    position: absolute;
+  }
+
+  .portfolio-inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .portfolio-bottom-0 {
+    bottom: 10%;
+    height: 90%;
+    width: 100%;
+    display: flex;
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* .portfolio-p-4 {
+    padding: 1rem;
+  } */
+
+  .portfolio-text-xl {
+    font-size: 6rem;
+  }
+  h3{
+    margin:0px;
+    padding:0;
+  }
+  .portfolio-text-white {
+    color: rgba(255, 255, 255, 0.493);
+  }
+
+  .portfolio-text-white-80 {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .portfolio-font-semibold {
+    font-weight: 600;
+  }
+
+  .portfolio-description {
+    /* font-size: 0.875rem; */
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0rem;
+    transition: opacity 0.3s;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  /* .about::before{
+    left:20px;
+    top:20px;
+    height:90%;
+    width:3px;
+
+  } */
+
+  .portfolio-media-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+
+  .portfolio-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(1.5);
+  }
+
+
+  /* .portfolio-group:hover .portfolio-image {
+    opacity: 0;
+    transform: scale(0.95);
+  } */
+
+  .portfolio-group {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .portfolio-group:hover {
+    transform: scale(1.03); /* Slightly enlarge the entire card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  }
+
+  .portfolio-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .portfolio-group:hover .portfolio-overlay {
+    opacity: 0.7; /* Slightly enhance overlay visibility on hover */
+  }
+  @media (max-width:1100px) {
+    .portfolio-sm-grid-cols-2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .portfolio-links{
+    display: flex;
+    gap:0.5rem;
+    position: absolute;
+    bottom:0px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  .button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+
+  .button svg path {
+    transition: 400ms;
+  }
+
+  .button:hover {
+    background-color: transparent;
+    outline: 1px white solid;
+    outline-offset: -1px;
+  }
+
+  /* .button:hover svg path {
+    fill: black;
+  } */
+   @media (max-width:680px) {
+    .portfolio-text-xl {
+      font-size: 6.25rem;
+    }
+   }
+   @media (max-width:515px) {
+    .portfolio-text-xl {
+      font-size: 4.25rem;
+    }
+    .portfolio-group{
+      height:280px;
+    }
+   }
+   .portfolio-progress{
+    position: absolute;
+    right:15px;
+    top:0;
+    color:white;
+    border:1px solid rgb(45, 45, 45);
+    padding:5px 10px;
+    border-radius: 8px;
+    background-color: rgb(45, 45, 45);
+    font-size: 12px;
+   }
+   /* Default state: hide description and title */
+.portfolio-description,
+.portfolio-text-xl {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show description and title on hover */
+.portfolio-group:hover .portfolio-description,
+.portfolio-group:hover .portfolio-text-xl {
+  opacity: 0;
+  transform: translateY(10px); /* Optional: slide-in effect */
+
+}
+
+
+/* Blur layer style */
+.portfolio-overlay-blur {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.19); /* Semi-transparent black for the blur effect */
+  backdrop-filter: blur(8px); /* Blur effect */
+  transition: opacity 0.3s ease;
+  opacity: 1; /* Visible by default */
+  pointer-events: none; /* Ensure it doesn't block interactions */
+}
+
+/* On hover: hide the blur layer */
+.portfolio-group:hover .portfolio-overlay-blur {
+  opacity: 0;
+}
+
+          /* Navbar CSS */
+          .navbar {
+            background: #356;
+            color: rgb(249,164,135);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .navbar-brand {
+            color: rgb(249,164,135);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar-links a {
+            color: rgb(249,164,135);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            color: rgb(251,193,166);
+        }
+
+        .navbar-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: rgb(249,164,135);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Footer CSS */
+        .footer {
+            background: #252827;
+            color: white;
+            padding: 2rem 0 0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-section h3 {
+            color: #4298C3;
+            margin-bottom: 1rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            justify-content: center; /* Center the icons horizontally */
+            gap: 1rem;
+            margin: 0 auto; /* Center the container */
+            width: fit-content; /* Make container only as wide as content */
+
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #4298C3;
+        }
+
+        .footer-section p {
+            color: rgba(255,255,255,0.8);
+            justify-content: center; /* Center the icons horizontally */
+            gap: 1rem;
+            margin: 0 auto; /* Center the container */
+            width: fit-content; /* Make container only as wide as content */
+
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center; /* Center the icons horizontally */
+            gap: 1rem;
+            font-size: 1.5rem;
+            margin: 0 auto; /* Center the container */
+            width: fit-content; /* Make container only as wide as content */
+          }
+
+          .social-links a {
+            color: rgba(255,255,255,0.8);
+            transition: color 0.3s;
+            display: inline-block; /* Ensure proper spacing */
+          }
+
+          .social-links a:hover {
+            color: #4298C3;
+          }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: rgba(0,0,0,0.2);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .navbar-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem 0;
+            }
+
+            .navbar-links.active {
+            display: flex;
+            }
+
+            .navbar-toggle {
+            display: block;
+            }
+
+            .navbar-container {
+            flex-wrap: wrap;
+            }
+        }
