@@ -185,6 +185,10 @@
             fetch('json/timeline.json')
                 .then(response => response.json())
                 .then(data => {
+                    if (!data || !data.events || data.events.length === 0) {
+                        document.getElementById('timelineSection').style.display = 'none';
+                        return;
+                    }
                     document.getElementById('timelineTitle').textContent = data.title || 'Timeline';
                     document.getElementById('timelineDescription').innerHTML = data.description || 'A timeline of events';
 
@@ -219,11 +223,18 @@
                 .then(events => {
                     if (events.length === 0) return;
 
-                    // First event gets the special landing page treatment
-                    createLandingCountdown(events[0]);
-
+                    // if event0 is {}, hide landing section
+                    if (Object.keys(events[0]).length === 0) {
+                        document.getElementById('landingSection').style.display = 'none';
+                    }else{
+                        // First event gets the special landing page treatment
+                        createLandingCountdown(events[0]);
+                    }
                     // Other events get normal treatment
                     const otherEventsContainer = document.getElementById('otherEvents');
+                    if(events.length<=1){
+                        document.getElementById('otherEvents').style.display = "none";
+                    }
                     for (let i = 1; i < events.length; i++) {
                         const eventContainer = document.createElement('div');
                         eventContainer.className = 'event-container';
