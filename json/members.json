@@ -1,12 +1,33 @@
 {
-    "2025":[
-        {
-            "name": "John Doe",
-            "image": "https://example.com/johndoe.jpg",
-            "description": "John is the president of the club and leads all activities.",
-            "contact": "",
-            "profile": ""
-        }
-    ]
-
+    "2025": {
+        "description": "Description of batch 2025",
+        "members": [
+            {
+                "name": "John Doe",
+                "image": "https://dummyimage.com/600x400/000/fff",
+                "description": "I like bla bla bla",
+                "contact": "john.doe@gmail.com",
+                "social": "https://fb.me/john.doe"
+            }
+        ]
+    },
+    "2024": {
+        "description": "Description of batch 2024",
+        "members": [
+            {
+                "name": "John Doe",
+                "image": "https://dummyimage.com/600x400/000/fff",
+                "description": "I like bla bla bla",
+                "contact": "john.doe@gmail.com",
+                "social": "https://fb.me/john.doe"
+            },
+            {
+                "name": "John Doe",
+                "image": "https://dummyimage.com/600x400/000/fff",
+                "description": "I like bla bla bla",
+                "contact": "john.doe@gmail.com",
+                "social": "https://fb.me/john.doe"
+            }
+        ]
+    }
 }
