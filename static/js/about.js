@@ -29,7 +29,7 @@ fetch('json/members.json')
     document.querySelectorAll('.view-members-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         const year = this.getAttribute('data-year');
-        showMembersModal(data[year]);
+        showMembersModal(data[year], year);
       });
     });
     document.querySelectorAll('.view-gallery-btn').forEach(btn => {
@@ -68,7 +68,7 @@ function fetchGallery(year) {
   }
 
 
-  function showMembersModal(batchData) {
+  function showMembersModal(batchData, year) {
     const modal = document.createElement('div');
     modal.className = 'members-modal';
 
@@ -78,10 +78,10 @@ function fetchGallery(year) {
         <div class="member-card">
           <img src="${member.image}" alt="${member.name}" class="member-image">
           <h3>${member.name}</h3>
-          <p>${member.description}</p>
+           ${member.description ? `<p>${member.description}</p>` : ''}
           <div class="member-contact">
-            <a href="mailto:${member.contact}">${member.contact}</a>
-            <a href="${member.social}" target="_blank">Social Media</a>
+            ${member.contact ? `<a href="mailto:${member.contact}">${member.contact}</a>` : ''}
+            ${member.social ? `<a target="_blank" href="${member.social}">Connect with them</a>` : ''}
           </div>
         </div>
       `;
@@ -90,7 +90,7 @@ function fetchGallery(year) {
     modal.innerHTML = `
       <div class="modal-content">
         <span class="close-modal">&times;</span>
-        <h2>Batch Members</h2>
+        <h2>Batch ${year} Members</h2>
         <div class="members-grid">
           ${membersHTML}
         </div>
@@ -119,7 +119,6 @@ function showGalleryModal(galleryData, year) {
 
     let galleryHTML = '';
     galleryData.forEach((item, index) => {
-        alert(item.image);
       galleryHTML += `
         <div class="gallery-item">
           <img src="${item.image}" alt="Gallery image ${index + 1}" class="gallery-image">

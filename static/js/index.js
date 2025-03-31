@@ -187,6 +187,8 @@
                 .then(data => {
                     if (!data || !data.events || data.events.length === 0) {
                         document.getElementById('timelineSection').style.display = 'none';
+                        document.getElementById('allevents_nav').style.display = 'none';
+                        document.getElementById('allevents_foo').style.display = 'none';
                         return;
                     }
                     document.getElementById('timelineTitle').textContent = data.title || 'Timeline';
