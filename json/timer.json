@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ICP InnoHack 2025 Application Deadline",
+        "date": "2025-04-02",
+        "start": "23:00:00",
+        "description_top": "First Ever mini hackathon in ICP",
+        "description_bottom": "<a href=''>Apply now!</a>",
+        "timezone": "Asia/Kathmandu",
+        "repeat": "none"
+    },
+    {
+        "name": "Developers Session {i}",
+        "date": "2025-03-23",
+        "start": "15:00:00",
+        "description_top": "",
+        "description_bottom": "Every Sunday 3PM @ Rupa",
+        "timezone": "Asia/Kathmandu",
+        "repeat": "weekly",
+        "weekdays": [0],
+        "start_at": 3,
+        "end_at": 10
+    }
+]
