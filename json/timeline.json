@@ -5,22 +5,27 @@
         {
             "name": "Registration",
             "date_time_str": "6:00 - 7:00 AM",
-            "description": "Registration, breakfast, and distribution of event passes."
+            "description": "Registration, breakfast, and distribution of event passes.<br>Atleast one member from a team should be present for registration."
         },
         {
             "name": "Event briefing",
             "date_time_str": "7:00 - 8:00 AM",
-            "description": "Networking among participants, judge introductions, and event briefing"
+            "description": "Networking among participants, judge introductions, and event briefing: rules and marking schemes. Check internet connections, confirm google classroom access. Double confirm everthings working and we are ready to roll."
         },
         {
             "name": "Hackathon Begins",
-            "date_time_str": "8:00 AM - 5:30 PM",
-            "description": ""
+            "date_time_str": "8:00 AM - 5:00 PM",
+            "description": "With problem statement or event's theme released right before 8:00 AM, the hackathon begins. Participants will have 9 hours to work on their projects.<br>Participants are provided with a meal and snacks coupon. They can visit canteen anytime during the event to claim. There's no dedicated time for lunch. Tired of coding? Take a break and maybe play some games. Roam around the college. Help your self with rasna/tang and coffee available thorughout the day.<br>Mentors will be making rounds to check on every teams and help them with their projects. They will be guide you to a right path if you found yourself lost."
+        },
+        {
+            "name": "Time to wrap up",
+            "date_time_str": "5:00 AM - 5:30 PM",
+            "description": "Prepare to wrap up your project. Make sure to submit your whole work's zip file before 5:30 PM in google classroom link provided to each team leader at the start of event.<br>Immediately call a voulnteer if you are facing any issues with submission."
         },
         {
             "name": "Break before pitching",
             "date_time_str": "5:30 - 6:00 PM",
-            "description": "Break before pitching"
+            "description": "Break before pitching. No presentation is required. Just preprare how your team is going to demonstrate your project to the judges. Make sure to have a backup of your work in case of any technical issues."
         },
         {
             "name": "Pitching",
@@ -30,7 +35,7 @@
         {
             "name": "Closing",
             "date_time_str": "7:00 PM onwards",
-            "description": "Closing ceremony and prize distribution"
+            "description": "Closing ceremony. Few wise words from guests. Token of love for judges and mentors. Certificates for all the participants. Winners won't be announced that day."
         }
     ]
 }
