@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8KTGNX41K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K8KTGNX41K');
+    </script>
+    <script>
+      function redirect() {
+        var path = window.location.pathname.toLowerCase().trim();
+        path = path.replace(/^\//, ''); // Remove leading slash
+
+        var location = window.location;
+
+        fetch('json/redirect.json')
+          .then(response => {
+            if (!response.ok) throw new Error("Failed to load redirects");
+            return response.json();
+          })
+          .then(redirects => {
+            // Convert redirects keys to lowercase for case-insensitive matching
+            const normalizedRedirects = Object.fromEntries(
+              Object.entries(redirects).map(([key, value]) => [key.toLowerCase(), value])
+            );
+
+            // Check if current path exists in redirects
+            if (normalizedRedirects[path]) {
+              // Log redirect event to GA4
+              gtag('event', 'redirect', {
+                'from_path': path,
+                'to_url': normalizedRedirects[path]
+              });
+
+              location.replace(normalizedRedirects[path]);
+            } else {
+                location.replace('/');
+            }
+          })
+          .catch(() => {
+            location.replace('/');
+          });
+      }
+      redirect();
+    </script>
+  </head>
+  <body>
+    <noscript>
+        <p>Enable JavaScript for automatic redirection, or <a href="/">go home</a>.</p>
+    </noscript>
+  </body>
+</html>
