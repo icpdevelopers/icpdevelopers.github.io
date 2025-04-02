@@ -1,4 +1,6 @@
 {
     "discord": "https://discord.gg/7HpJhBjaMH",
-    "innoHack": "https://docs.google.com/forms/d/e/1FAIpQLSchApAP5zkLBUPQ5f_j34piVWNkXUQutMYhwoR0NjooVSebhA/viewform"
+    "innoHack": "https://docs.google.com/forms/d/e/1FAIpQLSchApAP5zkLBUPQ5f_j34piVWNkXUQutMYhwoR0NjooVSebhA/viewform",
+    "seat-plan": "https://www.dropbox.com/scl/fi/dhwwf5r4r85vrfgo0bijz/Seat-Plan.xlsx?rlkey=tiwvu96vfgq1cudy1tb5jnayj&st=iivslr28&dl=0",
+    "seat-plan-json":"https://gist.githubusercontent.com/icpdevelopers/7066f64d103d65839a2a348c96bd2d3c/raw/ef5d5a13f52bebe89b29e62039ec8fa582a3e8aa/seat_plan.json"
 }
