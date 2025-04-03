@@ -1,10 +1,10 @@
 [
     {
-        "name": "InnoHack 2025 Application Deadline",
-        "date": "2025-04-02",
-        "start": "23:00:00",
+        "name": "InnoHack 2025",
+        "date": "2025-04-05",
+        "start": "6:00:00",
         "description_top": "",
-        "description_bottom": "First Ever mini hackathon in ICP!<br><a class='applyNowButton' target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSchApAP5zkLBUPQ5f_j34piVWNkXUQutMYhwoR0NjooVSebhA/viewform'>Apply now!</a>",
+        "description_bottom": "First Ever mini hackathon in ICP",
         "timezone": "Asia/Kathmandu",
         "repeat": "none",
         "plusminus": 0
