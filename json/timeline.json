@@ -5,7 +5,7 @@
         {
             "name": "Registration",
             "date_time_str": "6:00 - 7:00 AM",
-            "description": "Registration, breakfast, and distribution of event passes.<br>Atleast one member from a team should be present for registration."
+            "description": "Registration, breakfast.<br>Atleast one member from a team should be present for registration."
         },
         {
             "name": "Event briefing",
@@ -14,28 +14,33 @@
         },
         {
             "name": "Hackathon Begins",
-            "date_time_str": "8:00 AM - 5:00 PM",
-            "description": "With problem statement or event's theme released right before 8:00 AM, the hackathon begins. Participants will have 9 hours to work on their projects.<br>Participants are provided with a meal and snacks coupon. They can visit canteen anytime during the event to claim. There's no dedicated time for lunch. Tired of coding? Take a break and maybe play some games. Roam around the college. Help your self with rasna/tang and coffee available thorughout the day.<br>Mentors will be making rounds to check on every teams and help them with their projects. They will guide you to a right path if you found yourself lost."
+            "date_time_str": "8:00 AM - 4:00 PM",
+            "description": "With problem statement or event's theme released right before 8:00 AM, the hackathon begins. Participants will have 8 hours to work on their projects.<br>Tired of coding? Take a break and maybe play some games. Roam around the college. Help your self with rasna/tang and coffee available thorughout the day.<br>Mentors will be making rounds to check on every teams and help them with their projects. They will guide you to a right path if you found yourself lost."
+        },
+        {
+            "name": "The Lunch Portal",
+            "date_time_str": "10:30 AM - 12:30 PM",
+            "description": "@ Canteen"
+        },
+        {
+            "name": "The Snack Portal",
+            "date_time_str": "2:00 PM - 3:00 PM",
+            "description": "@Canteen"
         },
         {
             "name": "Time to wrap up",
-            "date_time_str": "5:00 AM - 5:30 PM",
-            "description": "Prepare to wrap up your project. Make sure to submit your whole work's zip file before 5:30 PM in google classroom link provided to each team leader at the start of event.<br>Immediately call a voulnteer if you are facing any issues with submission."
-        },
-        {
-            "name": "Break before pitching",
-            "date_time_str": "5:30 - 6:00 PM",
-            "description": "Break before pitching. No presentation is required. Just preprare how your team is going to demonstrate your project to the judges. Make sure to have a backup of your work in case of any technical issues."
+            "date_time_str": "3:00 AM - 4:00 PM",
+            "description": "Prepare to wrap up your project. Make sure to submit your whole work's zip file before 5:30 PM in google classroom link provided to each team leader at the start of event.<br>Immediately call a voulnteer if you are facing any issues with submission.<br><br>At this time, its better if one or two members of your team start preparing for pitching & demostration. Presentation slide which must contain two slides: 'The Problem we Identified' and 'Our Solution for that problem'."
         },
         {
             "name": "Pitching",
-            "date_time_str": "6:00 - 7:00 PM",
-            "description": "Demo and Q&A session"
+            "date_time_str": "4:00 PM onwards",
+            "description": "Presentation, Demo and Q&A session"
         },
         {
             "name": "Closing",
-            "date_time_str": "7:00 PM onwards",
-            "description": "Closing ceremony. Few wise words from guests. Token of love for judges and mentors. Certificates for all the participants. Winners won't be announced that day."
+            "date_time_str": "7:00 PM - 7:30 PM",
+            "description": "Closing ceremony. Token of love for judges and mentors. Few wise words from Abhinav sir. Winners won't be announced that day."
         }
     ]
 }
