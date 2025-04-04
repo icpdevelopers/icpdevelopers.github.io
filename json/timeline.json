@@ -5,7 +5,7 @@
         {
             "name": "Registration",
             "date_time_str": "6:00 - 7:00 AM",
-            "description": "Registration, breakfast.<br>Atleast one member from a team should be present for registration."
+            "description": "Team Registration & breakfast.<br>Atleast one member from a team must be present for registration."
         },
         {
             "name": "Event briefing",
@@ -25,12 +25,12 @@
         {
             "name": "The Snack Portal",
             "date_time_str": "2:00 PM - 3:00 PM",
-            "description": "@Canteen"
+            "description": "@ Canteen"
         },
         {
             "name": "Time to wrap up",
             "date_time_str": "3:00 AM - 4:00 PM",
-            "description": "Prepare to wrap up your project. Make sure to submit your whole work's zip file before 5:30 PM in google classroom link provided to each team leader at the start of event.<br>Immediately call a voulnteer if you are facing any issues with submission.<br><br>At this time, its better if one or two members of your team start preparing for pitching & demostration. Presentation slide which must contain two slides: 'The Problem we Identified' and 'Our Solution for that problem'."
+            "description": "Prepare to wrap up your project. Make sure to submit your whole work's zip file before 4:00 PM in google classroom link provided to each team leader at the start of event.<br>Immediately call a voulnteer if you are facing any issues with submission.<br><br>At this time, its better if one or two members of your team start preparing for pitching & demostration. Presentation slide which must contain two slides: 'The Problem we Identified' and 'Our Solution for that problem'."
         },
         {
             "name": "Pitching",
