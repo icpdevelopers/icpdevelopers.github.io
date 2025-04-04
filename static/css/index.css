@@ -135,6 +135,7 @@
             line-height: 1.4em;
             font-size: 1.03em;
             padding: 50px;
+            padding-left: 80px;
             list-style: none;
             text-align: left;
             font-weight: 100;
@@ -187,6 +188,32 @@
             content: "";
             top: 5px;
         }
+        @media (max-width: 768px) {
+            .timeline {
+              max-width: 90%;
+              padding: 30px;
+              padding-left: 50px;
+              margin: 30px auto;
+            }
+
+            .timeline .event:before {
+                position: relative;
+                left: 0;
+                text-align: left;
+                min-width: 0;
+                margin-bottom: 10px;
+                display: block;
+              }
+
+              .timeline .event:after {
+                left: -32px;
+                top: 15px;
+              }
+
+              h1 {
+                font-size: 1.8em;
+              }
+            }
         /* applynow button stylesheet */
         .applyNowButton {
         display: inline-block;
