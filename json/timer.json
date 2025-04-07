@@ -1,12 +1,12 @@
 [
     {
-        "name": "InnoHack Wiiner Announcement in",
+        "name": "InnoHack Winner Announcement in",
         "date": "2025-04-13",
         "start": "15:00:00",
         "description_top": "",
         "description_bottom": "Kasle jitla?",
         "timezone": "Asia/Kathmandu",
-        "repeat": null
+        "repeat": "none"
     },
     {
         "name": "Developers Session - {i}",
