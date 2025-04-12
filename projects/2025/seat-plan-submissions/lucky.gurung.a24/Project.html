@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Plan System</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f0f4ff, #e0e7ff);
+            font-family: 'Aerial ', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 30px;
+            color: #1e3a8a;
+        }
+        h1 {
+            color: #2563eb;
+            font-size: 38px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 60%;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(37, 99, 235, 0.1);
+            border: 2px solid #3b82f6;
+        }
+        .input-section {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #3b82f6;
+            border-radius: 8px;
+            width: 70%;
+            max-width: 300px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #22d3ee;
+            outline: none;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        button:hover {
+            background-color: #22d3ee;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #2c55c3;
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #3b82f6;
+        }
+        #result p {
+            margin: 8px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #64748b;
+            text-shadow: 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exam Seat Finder</h1>
+    <div class="container">
+        <div class="input-section">
+            <p>Enter Your Name:</p>
+            <input type="text" id="studentName">
+            <br><br>
+            <button onclick="findDetails()">Find My Seat!</button>
+        </div>
+        <div id="result" class="hidden">
+            <p><strong>Venue:</strong> <span id="venue"></span></p>
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>Time:</strong> <span id="time"></span></p>
+            <p><strong>Desk Number:</strong> <span id="desk"></span></p>
+        </div>
+    </div>
+    <div class="footer">
+        Good Luck for Your Exam!
+    </div>
+
+    <script>
+        const students = {
+            "alex devkota": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D09" },
+            "sugam bastola": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D18" },
+            "aman gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D27" },
+            "alex sharma": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D36" },
+            "bishwas rana magar": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D08" },
+            "dhiraj dhungana": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D17" },
+            "ishan k.c.": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D26" },
+            "dipesh thapa": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D35" },
+            "anuska bhattarai": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D07" },
+            "kushal paikhe": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D16" },
+            "manasbi karki": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D25" },
+            "karina thapa": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D34" },
+            "hiramani pun": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D06" },
+            "milan thapa": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D15" },
+            "melina chhetri": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D24" },
+            "manish gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D33" },
+            "kushal giri": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D05" },
+            "nirajan karki": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D14" },
+            "prasen karki": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D23" },
+            "pratik gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D32" },
+            "pratik panta": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D04" },
+            "rachit pandey": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D13" },
+            "siddhartha malla": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D22" },
+            "reshab jaishwal": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D31" },
+            "sanjeep magar": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D03" },
+            "sarthak ghimire": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D12" },
+            "sushan gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D21" },
+            "ariya timshina": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D30" },
+            "samir thapa": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D02" },
+            "suyog luitel": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D11" },
+            "utshab kandel": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D20" },
+            "bimal pandey": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D29" },
+            "ashrik kayastha": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D01" },
+            "sambriddhi baral": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D10" },
+            "ayush gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D19" },
+            "sabina ranabhat": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D28" },
+            "bipana timilsina": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D44" },
+            "apeel raj adhikari": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D43" },
+            "kamala kumari gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D42" },
+            "nishu gurung": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D41" },
+            "pranish poudel": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D40" },
+            "rojan shrestha": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D39" },
+            "sushil baruwal": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D38" },
+            "asmit bhujel": { venue: "LT02-Annapurna, Nepal Block", date: "31 March 2025", time: "03:15 PM - 05:15 PM", desk: "A-D37" }
+        };
+
+        function findDetails() {
+            const nameInput = document.getElementById("studentName").value.toLowerCase().trim();
+            const resultDiv = document.getElementById("result");
+            const venueSpan = document.getElementById("venue");
+            const dateSpan = document.getElementById("date");
+            const timeSpan = document.getElementById("time");
+            const deskSpan = document.getElementById("desk");
+
+            if (students[nameInput]) {
+                const student = students[nameInput];
+                venueSpan.textContent = student.venue;
+                dateSpan.textContent = student.date;
+                timeSpan.textContent = student.time;
+                deskSpan.textContent = student.desk;
+                resultDiv.classList.remove("hidden");
+            } else {
+                resultDiv.classList.add("hidden");
+                alert("Name not found! Please check your spelling.");
+            }
+        }
+    </script>
+</body>
+</html>

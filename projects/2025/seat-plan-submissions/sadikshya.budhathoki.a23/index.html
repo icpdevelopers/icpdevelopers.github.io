@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Seat Plan Finder</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Examination Seat Plan</h1>
+        <div class="exam-info">
+            <p><strong>View Your Exam Seat Here</strong></p>
+            <p><strong>Date: 31 March 2025 (03:15 PM-05:15 PM)</strong></p>
+        </div>
+        <label for="studentName">Enter Your Name:</label>
+        <input type="text" id="studentName" placeholder="e.g., Alex Devkota">
+        <button onclick="findSeatPlan()">Find My Seat</button>
+        <div id="result" class="result">
+            
+        </div>
+        <div class="note">
+            <p>Note: Please remember the name of exam venue indicated on the top of seat plan and the desk number indicated on the right side under your name. You have to write down the name of exam venue and desk number on your answer sheets.</p>
+        </div>
+    </div>
+
+
+    <!-- Link to the external JavaScript file -->
+    <script src="./js/script.js" defer></script>
+</body>
+</html>

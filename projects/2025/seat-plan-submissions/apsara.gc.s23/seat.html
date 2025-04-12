@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exam Seat Finder</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- XLSX (if needed later) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ICP College</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Life at ICP</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Scholarships</a></li>
+        <li><a href="Welcome.html" class="nav-register"><i class="fa-solid fa-circle-info"></i> Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <h1> Exam Seat Finder</h1>
+    <p class="subtext">Enter your full name to find your assigned seat.</p>
+
+    <div class="search-box">
+      <input type="text" id="nameInput" placeholder="e.g. Apsara GC" />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p>📧 info@icp.edu.np</p>
+        <p>📞 +977-61-123456</p>
+      </div>
+      <div class="footer-box">
+        <h3>Programs</h3>
+        <p>BSc (Hons) Computing</p>
+        <p>BSc (Hons) Cyber Security</p>
+        <p>BIT (Hons)</p>
+      </div>
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <p><a href="#">Admission</a></p>
+        <p><a href="#">FAQ</a></p>
+        <p><a href="#">Student Portal</a></p>
+      </div>
+      <div class="footer-box">
+        <h3>📍 Location</h3>
+        <p>Matepani, Pokhara</p>
+        <p>Near Gandaki Hospital</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Informatics College Pokhara. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

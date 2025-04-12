@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Seat Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Seat Finder</h1>
+        <input type="text" id="studentName" placeholder="Enter Student Name">
+        <button onclick="findSeat()">Find Seat</button>
+        <div class="result">
+            <p id="result"></p>
+
+        </div>
+    </div>
+
+    <script>
+        async function loadJSON() {
+            const response = await fetch("data.json");
+            const jsonData = await response.json();
+            return jsonData;
+        }
+
+        async function findSeat() {
+            const jsonData = await loadJSON();
+            const studentName = document.getElementById("studentName").value.trim().toUpperCase();
+            let result = "Name not found!";
+
+            for (const hall in jsonData) {
+                for (const seat in jsonData[hall].seats) {
+                    const details = jsonData[hall].seats[seat];
+                    if (details.student && details.student.toUpperCase() === studentName) {
+                        result = `Student: ${details.student}, Seat: ${seat}, Hall: ${hall}, Coordinates: (${details.x}, ${details.y})`;
+                        break;
+                    }
+                }
+            }
+
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+    <!--
+    If the goal is to make students more easy to get their exam seat then 
+    RTE'd provide the link of Excel sheet as you've provided us in everyone's mail can also be more efficient way
+    RTE department don't need to create a web application or any kind of extra applications
+    students search their name and find their and seats
+    -->
+</body>
+</html>

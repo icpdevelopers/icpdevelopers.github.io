@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Block Student Exam Details</title>
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Nepal Block Student Exam Details</h1>
+    <div class="search-container">
+        <input type="text" id="studentSearch" placeholder="Enter student name..." onkeyup="searchStudent()">
+        <div class="exam-details">Exam: March 31, 2025, 03:15 PM - 05:15 PM</div>
+    </div>
+    <table id="searchResultTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Seat Number</th>
+                <th>Class</th>
+                <th>Block</th>
+            </tr>
+        </thead>
+        <tbody id="searchResultBody">
+            <!-- Annapurna Class (10 Students) -->
+            <tr class="student-row" data-name="alex devkota">
+                <td>Alex Devkota</td>
+                <td>A-D09</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="bimal pandey">
+                <td>Bimal Pandey</td>
+                <td>A-D18</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="aman gurung">
+                <td>Aman Gurung</td>
+                <td>A-D27</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="ariya timsina">
+                <td>Ariya Timsina</td>
+                <td>A-D36</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="alex sharma">
+                <td>Alex Sharma</td>
+                <td>A-D45</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="bishwas rana magar">
+                <td>Bishwas Rana Magar</td>
+                <td>A-D08</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="dhiraj dhungana">
+                <td>Dhiraj Dhungana</td>
+                <td>A-D17</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="ishan k.c.">
+                <td>Ishan K.C.</td>
+                <td>A-D26</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="dipesh thapa">
+                <td>Dipesh Thapa</td>
+                <td>A-D35</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="bipana timilsina">
+                <td>Bipana Timilsina</td>
+                <td>A-D44</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <!-- Fewa Class (10 Students) -->
+            <tr class="student-row" data-name="aayush thapa">
+                <td>Aayush Thapa</td>
+                <td>F-D20</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="hrishab gurung">
+                <td>Hrishab Gurung</td>
+                <td>F-D15</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="ashish bhandari">
+                <td>Ashish Bhandari</td>
+                <td>F-D10</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="abinash lamgade bk">
+                <td>Abinash Lamgade BK</td>
+                <td>F-D05</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="madan sapkota">
+                <td>Madan Sapkota</td>
+                <td>F-D19</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="prashanta sharma">
+                <td>Prashanta Sharma</td>
+                <td>F-D14</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="nipesh devkota">
+                <td>Nipesh Devkota</td>
+                <td>F-D09</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="mahima kunwar">
+                <td>Mahima Kunwar</td>
+                <td>F-D04</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="pratik garbuja pun">
+                <td>Pratik Garbuja Pun</td>
+                <td>F-D18</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="sandip khatri">
+                <td>Sandip Khatri</td>
+                <td>F-D13</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <!-- Tilicho Class (10 Students) -->
+            <tr class="student-row" data-name="amrit thapa">
+                <td>Amrit Thapa</td>
+                <td>T-D20</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="gobin chhantyal">
+                <td>Gobin Chhantyal</td>
+                <td>T-D15</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="bhumika gurung">
+                <td>Bhumika Gurung</td>
+                <td>T-D10</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="ashok karki">
+                <td>Ashok Karki</td>
+                <td>T-D05</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="krish shai">
+                <td>Krish Shai</td>
+                <td>T-D19</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="manita gurung">
+                <td>Manita Gurung</td>
+                <td>T-D14</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="mayank gurung">
+                <td>Mayank Gurung</td>
+                <td>T-D09</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="kobit gurung">
+                <td>Kobit Gurung</td>
+                <td>T-D04</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="prawesh gurung">
+                <td>Prawesh Gurung</td>
+                <td>T-D18</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="student-row" data-name="rabin baniya">
+                <td>Rabin Baniya</td>
+                <td>T-D13</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button onclick="showAllStudents()">Show All Students</button>
+    </div>
+    <table id="allStudentsTable" class="hidden">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Seat Number</th>
+                <th>Class</th>
+                <th>Block</th>
+            </tr>
+        </thead>
+        <tbody id="allStudentsBody">
+            <!-- Annapurna Class (10 Students) -->
+            <tr class="all-student-row">
+                <td>Alex Devkota</td>
+                <td>A-D09</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Bimal Pandey</td>
+                <td>A-D18</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Aman Gurung</td>
+                <td>A-D27</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Ariya Timsina</td>
+                <td>A-D36</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Alex Sharma</td>
+                <td>A-D45</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Bishwas Rana Magar</td>
+                <td>A-D08</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Dhiraj Dhungana</td>
+                <td>A-D17</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Ishan K.C.</td>
+                <td>A-D26</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Dipesh Thapa</td>
+                <td>A-D35</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Bipana Timilsina</td>
+                <td>A-D44</td>
+                <td>Annapurna</td>
+                <td>Nepal Block</td>
+            </tr>
+            <!-- Fewa Class (10 Students) -->
+            <tr class="all-student-row">
+                <td>Aayush Thapa</td>
+                <td>F-D20</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Hrishab Gurung</td>
+                <td>F-D15</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Ashish Bhandari</td>
+                <td>F-D10</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Abinash Lamgade BK</td>
+                <td>F-D05</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Madan Sapkota</td>
+                <td>F-D19</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Prashanta Sharma</td>
+                <td>F-D14</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Nipesh Devkota</td>
+                <td>F-D09</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Mahima Kunwar</td>
+                <td>F-D04</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Pratik Garbuja Pun</td>
+                <td>F-D18</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Sandip Khatri</td>
+                <td>F-D13</td>
+                <td>Fewa</td>
+                <td>Nepal Block</td>
+            </tr>
+            <!-- Tilicho Class (10 Students) -->
+            <tr class="all-student-row">
+                <td>Amrit Thapa</td>
+                <td>T-D20</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Gobin Chhantyal</td>
+                <td>T-D15</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Bhumika Gurung</td>
+                <td>T-D10</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Ashok Karki</td>
+                <td>T-D05</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Krish Shai</td>
+                <td>T-D19</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Manita Gurung</td>
+                <td>T-D14</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Mayank Gurung</td>
+                <td>T-D09</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Kobit Gurung</td>
+                <td>T-D04</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Prawesh Gurung</td>
+                <td>T-D18</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+            <tr class="all-student-row">
+                <td>Rabin Baniya</td>
+                <td>T-D13</td>
+                <td>Tilicho</td>
+                <td>Nepal Block</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="pagination" class="pagination hidden"></div>
+
+    <script src="script.js"></script>
+        
+</body>
+</html>

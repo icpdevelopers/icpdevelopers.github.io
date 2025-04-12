@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Plan Locator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Seat Plan Locator</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Enter your name...">
+                <button id="search-btn">Find My Seat</button>
+            </div>
+        </header>
+
+        <div class="results">
+            <div id="seat-info" class="hidden">
+                <h2>Your Seat Information</h2>
+                <div class="info-card">
+                    <p><strong>Name:</strong> <span id="result-name"></span></p>
+                    <p><strong>Seat Number:</strong> <span id="result-seat"></span></p>
+                    <p><strong>Block:</strong> <span id="result-block"></span></p>
+                    <p><strong>Floor:</strong> <span id="result-floor"></span></p>
+                </div>
+            </div>
+            
+            <div id="seat-plan-container">
+                <h2>Seat Plan Overview</h2>
+                <div id="seat-plan"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   
+    
+
+</body>
+</html>

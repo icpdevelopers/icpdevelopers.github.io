@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule - Informatics College Pokhara</title>
+    <style>
+        :root {
+            --icp-primary: #0a2240; /* Dark blue from ICP logo */
+            --icp-secondary: #e31937; /* Red from ICP logo */
+            --icp-accent: #f8b133; /* Gold/yellow from ICP logo */
+            --icp-light: #f5f5f5;
+            --icp-white: #ffffff;
+            --icp-text: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--icp-light);
+            color: var(--icp-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                              url("//Images/background.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 30px;
+            background-color: var(--icp-white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(10, 34, 64, 0.2);
+            border-top: 5px solid var(--icp-secondary);
+            margin: 20px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--icp-primary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--icp-secondary);
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: 600;
+            color: var(--icp-primary);
+            font-size: 0.95rem;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: var(--icp-white);
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, select:focus {
+            outline: none;
+            border-color: var(--icp-secondary);
+            box-shadow: 0 0 0 2px rgba(227, 25, 55, 0.2);
+        }
+
+        button {
+            background-color: var(--icp-secondary);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background-color: #c0162e;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--icp-primary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 1.3rem;
+            }
+            
+            input[type="text"], select, button {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="connect.php" method="post">
+    <div class="container">
+        <div class="header">
+            
+            <h1>Exam Schedule</h1>
+            <p class="subtitle">Informatics College Pokhara</p>
+        </div>
+        
+        <form action="connect.php" method="post">
+            <div class="form-group">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" name="firstName">
+            </div>
+ 
+           
+            
+            <div class="form-group">
+                <label for="program">Select Section</label>
+                <input type="text" id="section" placeholder="Enter your Section" name="section">
+                
+            </div>
+            
+           
+            
+            <button type="submit">View Exam Schedule</button>
+        </form>
+        
+        <div class="footer">
+            <p>© 2023 Informatics College Pokhara. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

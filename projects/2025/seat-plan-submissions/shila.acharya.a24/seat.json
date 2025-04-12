@@ -1,0 +1,902 @@
+{
+    "Machhapuchhre": {
+        "entrance": [
+            9,
+            5
+        ],
+        "max_row": 9,
+        "max_col": 5,
+        "seats": {
+            "M-D45": {
+                "x": 0,
+                "y": 0,
+                "student": "SABINA RANABHAT"
+            },
+            "M-D36": {
+                "x": 0,
+                "y": 1,
+                "student": "AAYUSH THAPA"
+            },
+            "M-D27": {
+                "x": 0,
+                "y": 2,
+                "student": "BHUMIKA GURUNG"
+            },
+            "M-D18": {
+                "x": 0,
+                "y": 3,
+                "student": "GOBIN CHHANTYAL"
+            },
+            "M-D09": {
+                "x": 0,
+                "y": 4,
+                "student": "DARSHAN JUNG K.C."
+            },
+            "M-D44": {
+                "x": 1,
+                "y": 0,
+                "student": "DEV RAJ KANDEL"
+            },
+            "M-D35": {
+                "x": 1,
+                "y": 1,
+                "student": "AMAN GURUNG"
+            },
+            "M-D26": {
+                "x": 1,
+                "y": 2,
+                "student": "HIRAMANI PUN"
+            },
+            "M-D17": {
+                "x": 1,
+                "y": 3,
+                "student": "JEEYA B.K."
+            },
+            "M-D08": {
+                "x": 1,
+                "y": 4,
+                "student": "KAMALA KUMARI GURUNG"
+            },
+            "M-D43": {
+                "x": 2,
+                "y": 0,
+                "student": "SAMBRIDDHI BARAL"
+            },
+            "M-D34": {
+                "x": 2,
+                "y": 1,
+                "student": "DARSHAN JUNG K.C."
+            },
+            "M-D25": {
+                "x": 2,
+                "y": 2,
+                "student": "DIPESH THAPA"
+            },
+            "M-D16": {
+                "x": 2,
+                "y": 3,
+                "student": "RESHAB JAISHWAL"
+            },
+            "M-D07": {
+                "x": 2,
+                "y": 4,
+                "student": "UTSHAB KANDEL"
+            },
+            "M-D42": {
+                "x": 3,
+                "y": 0,
+                "student": "KAMALA KUMARI GURUNG"
+            },
+            "M-D33": {
+                "x": 3,
+                "y": 1,
+                "student": "ABINASH LAMGADE BK"
+            },
+            "M-D24": {
+                "x": 3,
+                "y": 2,
+                "student": "SAKSHAM POUDEL"
+            },
+            "M-D15": {
+                "x": 3,
+                "y": 3,
+                "student": "SAMIR THAPA"
+            },
+            "M-D06": {
+                "x": 3,
+                "y": 4,
+                "student": "RABIN BANIYA"
+            },
+            "M-D41": {
+                "x": 4,
+                "y": 0,
+                "student": "RACHIT PANDEY"
+            },
+            "M-D32": {
+                "x": 4,
+                "y": 1,
+                "student": "ROJAN SHRESTHA"
+            },
+            "M-D23": {
+                "x": 4,
+                "y": 2,
+                "student": "MAYANK GURUNG"
+            },
+            "M-D14": {
+                "x": 4,
+                "y": 3,
+                "student": "KARINA THAPA"
+            },
+            "M-D05": {
+                "x": 4,
+                "y": 4,
+                "student": "SAUGAT POUDEL"
+            },
+            "M-D40": {
+                "x": 5,
+                "y": 0,
+                "student": "SIDDHARTHA MALLA"
+            },
+            "M-D31": {
+                "x": 5,
+                "y": 1,
+                "student": "KUSHAL GIRI"
+            },
+            "M-D22": {
+                "x": 5,
+                "y": 2,
+                "student": "PRAWESH GURUNG"
+            },
+            "M-D13": {
+                "x": 5,
+                "y": 3,
+                "student": "DARSHAN JUNG K.C."
+            },
+            "M-D04": {
+                "x": 5,
+                "y": 4,
+                "student": "KRISH SHAI"
+            },
+            "M-D39": {
+                "x": 6,
+                "y": 0,
+                "student": "RISHES PUN"
+            },
+            "M-D30": {
+                "x": 6,
+                "y": 1,
+                "student": "MANASBI KARKI"
+            },
+            "M-D21": {
+                "x": 6,
+                "y": 2,
+                "student": "MANITA GURUNG"
+            },
+            "M-D12": {
+                "x": 6,
+                "y": 3,
+                "student": "ASMIT BHUJEL"
+            },
+            "M-D03": {
+                "x": 6,
+                "y": 4,
+                "student": "SUMINA SHAHI"
+            },
+            "M-D38": {
+                "x": 7,
+                "y": 0,
+                "student": "AMRIT THAPA"
+            },
+            "M-D29": {
+                "x": 7,
+                "y": 1,
+                "student": "ARIYA TIMSINA"
+            },
+            "M-D20": {
+                "x": 7,
+                "y": 2,
+                "student": "BIJAY ADHIKARI"
+            },
+            "M-D11": {
+                "x": 7,
+                "y": 3,
+                "student": "PRATIK GARBUJA PUN"
+            },
+            "M-D02": {
+                "x": 7,
+                "y": 4,
+                "student": "KOBIT GURUNG"
+            },
+            "M-D37": {
+                "x": 8,
+                "y": 0,
+                "student": "SUSHIL BARUWAL"
+            },
+            "M-D28": {
+                "x": 8,
+                "y": 1,
+                "student": "ASHOK KARKI"
+            },
+            "M-D19": {
+                "x": 8,
+                "y": 2,
+                "student": "PRAWESH GURUNG"
+            },
+            "M-D10": {
+                "x": 8,
+                "y": 3,
+                "student": "BIJAY ADHIKARI"
+            },
+            "M-D01": {
+                "x": 8,
+                "y": 4,
+                "student": "SAMRAT THAPA"
+            }
+        }
+    },
+    "Annapurna": {
+        "entrance": [
+            9,
+            0
+        ],
+        "max_row": 9,
+        "max_col": 5,
+        "seats": {
+            "A-D09": {
+                "x": 0,
+                "y": 0,
+                "student": "ALEX DEVKOTA"
+            },
+            "A-D18": {
+                "x": 0,
+                "y": 1,
+                "student": "BIMAL PANDEY"
+            },
+            "A-D27": {
+                "x": 0,
+                "y": 2,
+                "student": "AMAN GURUNG"
+            },
+            "A-D36": {
+                "x": 0,
+                "y": 3,
+                "student": "ARIYA TIMSINA"
+            },
+            "A-D45": {
+                "x": 0,
+                "y": 4,
+                "student": "ALEX SHARMA"
+            },
+            "A-D08": {
+                "x": 1,
+                "y": 0,
+                "student": "BISHWAS RANA MAGAR"
+            },
+            "A-D17": {
+                "x": 1,
+                "y": 1,
+                "student": "DHIRAJ DHUNGANA"
+            },
+            "A-D26": {
+                "x": 1,
+                "y": 2,
+                "student": "ISHAN K.C."
+            },
+            "A-D35": {
+                "x": 1,
+                "y": 3,
+                "student": "DIPESH THAPA"
+            },
+            "A-D44": {
+                "x": 1,
+                "y": 4,
+                "student": "BIPANA TIMILSINA"
+            },
+            "A-D07": {
+                "x": 2,
+                "y": 0,
+                "student": "ANUSKA BHATTARAI"
+            },
+            "A-D16": {
+                "x": 2,
+                "y": 1,
+                "student": "KUSHAL PALIKHE"
+            },
+            "A-D25": {
+                "x": 2,
+                "y": 2,
+                "student": "MANASBI KARKI"
+            },
+            "A-D34": {
+                "x": 2,
+                "y": 3,
+                "student": "KARINA THAPA"
+            },
+            "A-D43": {
+                "x": 2,
+                "y": 4,
+                "student": "APEEL RAJ ADHIKARI"
+            },
+            "A-D06": {
+                "x": 3,
+                "y": 0,
+                "student": "HIRAMANI PUN"
+            },
+            "A-D15": {
+                "x": 3,
+                "y": 1,
+                "student": "MILAN THAPA"
+            },
+            "A-D24": {
+                "x": 3,
+                "y": 2,
+                "student": "MELINA CHHETRI"
+            },
+            "A-D33": {
+                "x": 3,
+                "y": 3,
+                "student": "MANISH GURUNG"
+            },
+            "A-D42": {
+                "x": 3,
+                "y": 4,
+                "student": "KAMALA KUMARI GURUNG"
+            },
+            "A-D05": {
+                "x": 4,
+                "y": 0,
+                "student": "KUSHAL GIRI"
+            },
+            "A-D14": {
+                "x": 4,
+                "y": 1,
+                "student": "NIRAJAN KARKI"
+            },
+            "A-D23": {
+                "x": 4,
+                "y": 2,
+                "student": "PRASEN KARKI"
+            },
+            "A-D32": {
+                "x": 4,
+                "y": 3,
+                "student": "PRATIK GURUNG"
+            },
+            "A-D41": {
+                "x": 4,
+                "y": 4,
+                "student": "NISHU GURUNG"
+            },
+            "A-D04": {
+                "x": 5,
+                "y": 0,
+                "student": "PRATIK PANTA"
+            },
+            "A-D13": {
+                "x": 5,
+                "y": 1,
+                "student": "RACHIT PANDEY"
+            },
+            "A-D22": {
+                "x": 5,
+                "y": 2,
+                "student": "SIDDHARTHA MALLA"
+            },
+            "A-D31": {
+                "x": 5,
+                "y": 3,
+                "student": "RESHAB JAISHWAL"
+            },
+            "A-D40": {
+                "x": 5,
+                "y": 4,
+                "student": "PRANISH POUDEL"
+            },
+            "A-D03": {
+                "x": 6,
+                "y": 0,
+                "student": "SANJEEP MAGAR"
+            },
+            "A-D12": {
+                "x": 6,
+                "y": 1,
+                "student": "SARTHAK GHIMIRE"
+            },
+            "A-D21": {
+                "x": 6,
+                "y": 2,
+                "student": "SUSHAN GURUNG"
+            },
+            "A-D30": {
+                "x": 6,
+                "y": 3,
+                "student": "SUGAM BASTOLA"
+            },
+            "A-D39": {
+                "x": 6,
+                "y": 4,
+                "student": "ROJAN SHRESTHA"
+            },
+            "A-D02": {
+                "x": 7,
+                "y": 0,
+                "student": "SAMIR THAPA"
+            },
+            "A-D11": {
+                "x": 7,
+                "y": 1,
+                "student": "SUYOG LUITEL"
+            },
+            "A-D20": {
+                "x": 7,
+                "y": 2,
+                "student": "UTSHAB KANDEL"
+            },
+            "A-D29": {
+                "x": 7,
+                "y": 3,
+                "student": "SUSHIL BARUWAL"
+            },
+            "A-D38": {
+                "x": 7,
+                "y": 4,
+                "student": "NISHU GURUNG"
+            },
+            "A-D01": {
+                "x": 8,
+                "y": 0,
+                "student": "ASHRIK KAYASTHA"
+            },
+            "A-D10": {
+                "x": 8,
+                "y": 1,
+                "student": "SAMBRIDDHI BARAL"
+            },
+            "A-D19": {
+                "x": 8,
+                "y": 2,
+                "student": "AYUSH GURUNG"
+            },
+            "A-D28": {
+                "x": 8,
+                "y": 3,
+                "student": "SABINA RANABHAT"
+            },
+            "A-D37": {
+                "x": 8,
+                "y": 4,
+                "student": "ASMIT BHUJEL"
+            }
+        }
+    },
+    "Fewa": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "F-D20": {
+                "x": 0,
+                "y": 0,
+                "student": "AAYUSH THAPA"
+            },
+            "F-D15": {
+                "x": 0,
+                "y": 1,
+                "student": "HRISHAB GURUNG"
+            },
+            "F-D10": {
+                "x": 0,
+                "y": 2,
+                "student": "ASHISH BHANDARI"
+            },
+            "F-D05": {
+                "x": 0,
+                "y": 3,
+                "student": "ABINASH LAMGADE BK"
+            },
+            "F-D19": {
+                "x": 1,
+                "y": 0,
+                "student": "MADAN SAPKOTA"
+            },
+            "F-D14": {
+                "x": 1,
+                "y": 1,
+                "student": "PRASHANTA SHARMA"
+            },
+            "F-D09": {
+                "x": 1,
+                "y": 2,
+                "student": "NIPESH DEVKOTA"
+            },
+            "F-D04": {
+                "x": 1,
+                "y": 3,
+                "student": "MAHIMA KUNWAR"
+            },
+            "F-D18": {
+                "x": 2,
+                "y": 0,
+                "student": "PRATIK GARBUJA PUN"
+            },
+            "F-D13": {
+                "x": 2,
+                "y": 1,
+                "student": "SANDIP KHATRI"
+            },
+            "F-D08": {
+                "x": 2,
+                "y": 2,
+                "student": "SAMRAT THAPA"
+            },
+            "F-D03": {
+                "x": 2,
+                "y": 3,
+                "student": "NILIMA GURUNG"
+            },
+            "F-D17": {
+                "x": 3,
+                "y": 0,
+                "student": "DARSHAN JUNG K.C."
+            },
+            "F-D12": {
+                "x": 3,
+                "y": 1,
+                "student": "ROHAN KHATRI"
+            },
+            "F-D07": {
+                "x": 3,
+                "y": 2,
+                "student": "SUMINA SHAHI"
+            },
+            "F-D02": {
+                "x": 3,
+                "y": 3,
+                "student": "BIJAY ADHIKARI"
+            },
+            "F-D16": {
+                "x": 4,
+                "y": 0,
+                "student": "AJEET KUMAR THAPA"
+            },
+            "F-D11": {
+                "x": 4,
+                "y": 1,
+                "student": "JEEYA B.K."
+            },
+            "F-D06": {
+                "x": 4,
+                "y": 2,
+                "student": "RISHES PUN"
+            },
+            "F-D01": {
+                "x": 4,
+                "y": 3,
+                "student": "ASHISH ADHIKARI"
+            }
+        }
+    },
+    "Tilicho": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "T-D20": {
+                "x": 0,
+                "y": 0,
+                "student": "AMRIT THAPA"
+            },
+            "T-D15": {
+                "x": 0,
+                "y": 1,
+                "student": "GOBIN CHHANTYAL"
+            },
+            "T-D10": {
+                "x": 0,
+                "y": 2,
+                "student": "BHUMIKA GURUNG"
+            },
+            "T-D05": {
+                "x": 0,
+                "y": 3,
+                "student": "ASHOK KARKI"
+            },
+            "T-D19": {
+                "x": 1,
+                "y": 0,
+                "student": "KRISH SHAI"
+            },
+            "T-D14": {
+                "x": 1,
+                "y": 1,
+                "student": "MANITA GURUNG"
+            },
+            "T-D09": {
+                "x": 1,
+                "y": 2,
+                "student": "MAYANK GURUNG"
+            },
+            "T-D04": {
+                "x": 1,
+                "y": 3,
+                "student": "KOBIT GURUNG"
+            },
+            "T-D18": {
+                "x": 2,
+                "y": 0,
+                "student": "PRAWESH GURUNG"
+            },
+            "T-D13": {
+                "x": 2,
+                "y": 1,
+                "student": "RABIN BANIYA"
+            },
+            "T-D08": {
+                "x": 2,
+                "y": 2,
+                "student": "SAKSHAM POUDEL"
+            },
+            "T-D03": {
+                "x": 2,
+                "y": 3,
+                "student": "PRANISH BADGAMI"
+            },
+            "T-D17": {
+                "x": 3,
+                "y": 0,
+                "student": "SAUGAT POUDEL"
+            },
+            "T-D12": {
+                "x": 3,
+                "y": 1,
+                "student": "SUMIT MAHAT"
+            },
+            "T-D07": {
+                "x": 3,
+                "y": 2,
+                "student": "SHRESHKAR GURUNG"
+            },
+            "T-D02": {
+                "x": 3,
+                "y": 3,
+                "student": "PRAKASH GURUNG"
+            },
+            "T-D16": {
+                "x": 4,
+                "y": 0,
+                "student": "ANGEL GURUNG"
+            },
+            "T-D11": {
+                "x": 4,
+                "y": 1,
+                "student": "DEV RAJ KANDEL"
+            },
+            "T-D06": {
+                "x": 4,
+                "y": 2,
+                "student": "SACHIN GURUNG"
+            },
+            "T-D01": {
+                "x": 4,
+                "y": 3,
+                "student": "ANKIT YOGI"
+            }
+        }
+    }, 
+    "Thames": {
+        "entrance": [
+            5,
+            4
+        ],
+        "max_row": 5,
+        "max_col": 4,
+        "seats": {
+            "T-D17": {
+                "x": 0,
+                "y": 0,
+                "student": "NILIMA GURUNG"
+            },
+            "T-D13": {
+                "x": 0,
+                "y": 1,
+                "student": "NIRAJAN KARKI"
+            },
+            "T-D09": {
+                "x": 0,
+                "y": 2,
+                "student": "ROJAN SHRESTHA"
+            },
+            "T-D05": {
+                "x": 0,
+                "y": 3,
+                "student": "BIPANA TIMILSINA"
+            },
+            "T-D16": {
+                "x": 1,
+                "y": 0,
+                "student": "BISHWAS RANA MAGAR"
+            },
+            "T-D12": {
+                "x": 1,
+                "y": 1,
+                "student": "BIMAL PANDEY"
+            },
+            "T-D08": {
+                "x": 1,
+                "y": 2,
+                "student": "BIJAY ADHIKARI"
+            },
+            "T-D04": {
+                "x": 1,
+                "y": 3,
+                "student": "BHUMIKA GURUNG"
+            },
+            "T-D15": {
+                "x": 2,
+                "y": 0,
+                "student": "ABINASH LAMGADE BK"
+            },
+            "T-D11": {
+                "x": 2,
+                "y": 1,
+                "student": "SUYOG LUITEL"
+            },
+            "T-D07": {
+                "x": 2,
+                "y": 2,
+                "student": "ANKIT YOGI"
+            },
+            "T-D03": {
+                "x": 2,
+                "y": 3,
+                "student": "KOBIT GURUNG"
+            },
+            "T-D14": {
+                "x": 3,
+                "y": 0,
+                "student": "GOBIN CHHANTYAL"
+            },
+            "T-D10": {
+                "x": 3,
+                "y": 1,
+                "student": "SHRESHKAR GURUNG"
+            },
+            "T-D06": {
+                "x": 3,
+                "y": 2,
+                "student": "ALEX DEVKOTA"
+            },
+            "T-D02": {
+                "x": 3,
+                "y": 3,
+                "student": "GOBIN CHHANTYAL"
+            },
+            "T-D01": {
+                "x": 4,
+                "y": 0,
+                "student": "DARSHAN JUNG K.C."
+            }
+        }
+    },
+    "Open Access": {
+        "entrance": [
+            7,
+            0
+        ],
+        "max_row": 7,
+        "max_col": 3,
+        "seats": {
+            "O-D07": {
+                "x": 0,
+                "y": 0,
+                "student": "APEEL RAJ ADHIKARI"
+            },
+            "O-D14": {
+                "x": 0,
+                "y": 1,
+                "student": "UTSHAB KANDEL"
+            },
+            "O-D21": {
+                "x": 0,
+                "y": 2,
+                "student": "SANDIP KHATRI"
+            },
+            "O-D06": {
+                "x": 1,
+                "y": 0,
+                "student": "DHIRAJ DHUNGANA"
+            },
+            "O-D13": {
+                "x": 1,
+                "y": 1,
+                "student": "SIDDHARTHA MALLA"
+            },
+            "O-D20": {
+                "x": 1,
+                "y": 2,
+                "student": "DARSHAN JUNG K.C."
+            },
+            "O-D05": {
+                "x": 2,
+                "y": 0,
+                "student": "PRASEN KARKI"
+            },
+            "O-D12": {
+                "x": 2,
+                "y": 1,
+                "student": "SAMRAT THAPA"
+            },
+            "O-D19": {
+                "x": 2,
+                "y": 2,
+                "student": "BIMAL PANDEY"
+            },
+            "O-D04": {
+                "x": 3,
+                "y": 0,
+                "student": "ISHAN K.C."
+            },
+            "O-D11": {
+                "x": 3,
+                "y": 1,
+                "student": "MELINA CHHETRI"
+            },
+            "O-D18": {
+                "x": 3,
+                "y": 2,
+                "student": "SUSHAN GURUNG"
+            },
+            "O-D03": {
+                "x": 4,
+                "y": 0,
+                "student": "ASHISH BHANDARI"
+            },
+            "O-D10": {
+                "x": 4,
+                "y": 1,
+                "student": "PRATIK PANTA"
+            },
+            "O-D17": {
+                "x": 4,
+                "y": 2,
+                "student": "ALEX DEVKOTA"
+            },
+            "O-D02": {
+                "x": 5,
+                "y": 0,
+                "student": "NIPESH DEVKOTA"
+            },
+            "O-D09": {
+                "x": 5,
+                "y": 1,
+                "student": "JEEYA B.K."
+            },
+            "O-D16": {
+                "x": 5,
+                "y": 2,
+                "student": "NIPESH DEVKOTA"
+            },
+            "O-D01": {
+                "x": 6,
+                "y": 0,
+                "student": "MAHIMA KUNWAR"
+            },
+            "O-D08": {
+                "x": 6,
+                "y": 1,
+                "student": "KUSHAL PALIKHE"
+            },
+            "O-D15": {
+                "x": 6,
+                "y": 2,
+                "student": "PRAWESH GURUNG"
+            }
+        }
+    }
+}
