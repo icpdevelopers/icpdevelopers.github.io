@@ -1,0 +1,39 @@
+<script>
+var url="https://colab.research.google.com/drive/18fcR-h3swHDZIle-cEy-JYZNgMxHe3iS?usp=sharing"
+</script>
+
+    <style>
+        body {
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        .button {
+            padding: 20px 40px; /* Large padding for the button */
+            font-size: 24px; /* Large font size */
+            color: white; /* Text color */
+            background-color: #007bff; /* Button background color */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Slightly rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Transition effect */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darken color on hover */
+        }
+    </style>
+
+    <button class="button" id="openTabButton">Open External URL</button>
+
+    <script>
+        document.getElementById('openTabButton').addEventListener('click', function() {
+            window.open(url, '_blank');
+
+            window.history.back();
+        });
+    </script>
