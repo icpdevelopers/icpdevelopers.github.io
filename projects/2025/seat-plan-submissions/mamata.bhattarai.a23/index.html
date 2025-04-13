@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Student Exam Information</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class='container'>
+        <h1>Student Exam Information</h1>
+        <form id='student-form'>
+            <label for='student-name'>Enter Your Full Name:</label>
+            <input type='text' id='student-name' name='student-name' placeholder='Full Name (e.g., ALEX DEVKOTA)' required>
+            <button type='submit'>Find My Exam Details</button>
+        </form>
+        
+        <div id='exam-info'>
+            <div class="student-info">
+                <p>Name: <span id="display-name"></span></p>
+                <p>Desk Number: <span id="display-desk"></span></p>
+                <p>Exam: <span id="display-exam"></span></p>
+                <p>Venue: <span id="display-venue"></span></p>
+                <p>Date & Time: <span id="display-datetime"></span></p>
+            </div>
+            
+            <div class="campus-map">
+                <h2>Campus Map</h2>
+                
+                <div class="block-container">
+                    <div class="nepal-block">
+                        <h3>Nepal Block!</h3>
+                        <div class="nepal-top-row">
+                            <div class="classroom" id="Machha">Machha.</div>
+                            <div class="classroom" id="Nilgiri">Nilgiri</div>
+                            <div class="classroom" id="Anna">Anna.</div>
+                        </div>
+                        <div class="nepal-middle-row">
+                            <div class="classroom" id="Begnas">Begnas</div>
+                            <div class="classroom" id="Gokyo">Gokyo</div>
+                            <div class="classroom" id="Rara">Rara</div>
+                        </div>
+                        <div class="nepal-bottom-row">
+                            <div class="classroom" id="Fewa">Fewa</div>
+                            <div class="classroom occupied" id="Tilicho">Tilicho</div>
+                            <div class="classroom" id="Tilicho">Tilicho</div>
+                        </div>
+                        <div class="nepal-last-row">
+                            <div class="classroom occupied"></div>
+                            <div class="classroom" id="Rupa">Rupa</div>
+                        </div>
+                    </div>
+                    
+                    <div class="uk-block">
+                        <h3>UK Block!</h3>
+                        <div class="uk-row">
+                            <div class="classroom uk-left" id="Kingston">Kingston</div>
+                            <div class="classroom uk-right" id="Thames">Thames</div>
+                        </div>
+                        <div class="uk-row">
+                            <div class="classroom uk-left occupied"></div>
+                            <div class="classroom uk-right" id="Stonehenge">Stonehenge</div>
+                        </div>
+                        <div class="uk-row">
+                            <div class="classroom uk-left" id="LAB">LAB</div>
+                            <div class="classroom uk-right" id="Bigben">Bigben</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('student-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const studentName = document.getElementById('student-name').value.trim().toUpperCase();
+            const examInfo = document.getElementById('exam-info');
+            
+            // Reset any previously highlighted classroom
+            const highlighted = document.querySelector('.highlighted');
+            if (highlighted) {
+                highlighted.classList.remove('highlighted');
+            }
+            
+            const students = {
+                "ALEX DEVKOTA": { desk: "A-D08", venue: "fewa", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "SUGAM BASTOLA": { desk: "A-D18", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "AMAN GURUNG": { desk: "A-D27", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "ALEX SHARMA": { desk: "A-D45", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "BISWAS RANA MAGAR": { desk: "A-D09", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "DHIRAJ DHUNGANA": { desk: "A-D17", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "ISHAN K.C": { desk: "A-D28", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "DIPESH THAPA": { desk: "A-D35", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+                "RIPANA TIMILSINA": { desk: "A-D44", venue: "Annapurna", block: "Nepal Block", room: "Anna", exam: "LT02", datetime: "31 March 2025 (03:15 PM-05:15 PM)" },
+            };
+            
+            if (students[studentName]) {
+                // Display student information
+                document.getElementById('display-name').textContent = studentName;
+                document.getElementById('display-desk').textContent = students[studentName].desk;
+                document.getElementById('display-exam').textContent = students[studentName].exam;
+                document.getElementById('display-venue').textContent = students[studentName].venue;
+                document.getElementById('display-datetime').textContent = students[studentName].datetime;
+                
+                // Highlight the classroom
+                const classroom = document.getElementById(students[studentName].room);
+                if (classroom) {
+                    classroom.classList.add('highlighted');
+                }
+                
+                // Show the exam info section
+                examInfo.style.display = 'block';
+            } else {
+                alert('Student not found. Please check your name and try again.');
+                examInfo.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

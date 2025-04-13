@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+input[type='text'] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#exam-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    text-align: center;
+    color: #333;
+    display: none;
+}
+
+.campus-map {
+    margin-top: 40px;
+}
+
+.block-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.nepal-block, .uk-block {
+    position: relative;
+    margin: 10px;
+}
+
+.classroom {
+    position: relative;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: blue;
+    background-color: white;
+}
+
+.occupied {
+    background-color: #888;
+}
+
+/* Nepal Block Layout */
+.nepal-block {
+    width: 400px;
+}
+
+.nepal-top-row, .nepal-middle-row, .nepal-bottom-row, .nepal-last-row {
+    display: flex;
+    height: 100px;
+}
+
+.nepal-top-row .classroom, .nepal-middle-row .classroom, .nepal-bottom-row .classroom {
+    width: 133px;
+    height: 100px;
+}
+
+.nepal-last-row {
+    width: 266px;
+    margin: 0 auto;
+}
+
+.nepal-last-row .classroom {
+    width: 133px;
+    height: 100px;
+}
+
+/* UK Block Layout */
+.uk-block {
+    width: 300px;
+}
+
+.uk-row {
+    display: flex;
+    height: 100px;
+}
+
+.uk-left {
+    width: 150px;
+}
+
+.uk-right {
+    width: 150px;
+}
+
+.highlighted {
+    border: 3px solid red !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.student-info {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.student-info span {
+    font-weight: bold;
+    color: #007BFF;
+}
