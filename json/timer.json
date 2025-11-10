@@ -1,15 +1,4 @@
 [
     {
-    },
-    {
-        "name": "Developers Session - {i}",
-        "date": "2025-09-07",
-        "start": "15:00:00",
-        "description_top": "",
-        "description_bottom": "Every Sunday 3PM @ Rupa<br>See you all after the summer break!",
-        "timezone": "Asia/Kathmandu",
-        "repeat": "weekly",
-        "plusminus":0,
-        "weekdays": 0
     }
 ]
