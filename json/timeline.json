@@ -38,14 +38,14 @@
             "description": "Top 10 team's Presentation, Demo and Q&A session. During break, Mentors evaluate and select top 10 teams."
         },
         {
-            "name": "Pitching",
+            "name": "Short Break",
             "date_time_str": "6:00 PM - 6:30 PM",
-            "description": "Judge Deliberation & Winner Announcement"
+            "description": "Judge Deliberation & Final Scoring"
         },
         {
             "name": "Closing",
             "date_time_str": "6:30 PM - 7:00 PM",
-            "description": "Closing ceremony. Token of love for judges and mentors."
+            "description": "Closing ceremony. Token of love for judges and mentors. Winners won't be announced that day."
         }
     ]
 }
