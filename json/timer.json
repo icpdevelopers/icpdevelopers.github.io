@@ -1,10 +1,10 @@
 [
     {
-        "name": "InnoHack 2026 Application Deadline",
-        "date": "2026-04-08",
-        "start": "13:00:00",
+        "name": "InnoHack 2026 starts in",
+        "date": "2026-04-11",
+        "start": "06:00:00",
         "description_top": "",
-        "description_bottom": "Annual Hackathon at ICP!<br><a class='applyNowButton' target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSeSInCVFZUY-Du_Yer5S8VilDYjpoi0Mtcyyu7sTThe17X9GA/viewform'>Apply now!</a>",
+        "description_bottom": "Annual Hackathon at ICP!<br><a class='applyNowButton' target='_blank' href='https://docs.google.com/spreadsheets/d/1AIh0D8fmpuUZYQ4RgVCN0uqSw4l-h0Tx13Q_hRhJegk/view'>View Teams</a>",
         "timezone": "Asia/Kathmandu",
         "repeat": "none"        
     }
