@@ -3,8 +3,8 @@
         "name": "InnoHack 2026 winner announcement in",
         "date": "2026-05-01",
         "start": "15:00:00",
-        "description_top": "kasle jitla?",
-        "description_bottom": "<a class='applyNowButton' target='_blank' href='https://docs.google.com/spreadsheets/d/1ennZhQINIvpxRxiMUYAZ4Flt9lfVgtjh2mIr-5rA1Ts/view'>View Top 10 Finalists</a>",
+        "description_top": "",
+        "description_bottom": "kasle jitla?<br><a class='applyNowButton' target='_blank' href='https://docs.google.com/spreadsheets/d/1ennZhQINIvpxRxiMUYAZ4Flt9lfVgtjh2mIr-5rA1Ts/view'>View Top 10 Finalists</a>",
         "timezone": "Asia/Kathmandu",
         "repeat": "none"
     }
