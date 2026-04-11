@@ -1,11 +1,11 @@
 [
     {
-        "name": "InnoHack 2026 starts in",
-        "date": "2026-04-11",
-        "start": "06:00:00",
-        "description_top": "",
-        "description_bottom": "Annual Hackathon at ICP!<br><a class='applyNowButton' target='_blank' href='https://docs.google.com/spreadsheets/d/1AIh0D8fmpuUZYQ4RgVCN0uqSw4l-h0Tx13Q_hRhJegk/view'>View Teams</a>",
+        "name": "InnoHack 2026 winner announcement in",
+        "date": "2026-05-01",
+        "start": "15:00:00",
+        "description_top": "kasle jitla?",
+        "description_bottom": "<a class='applyNowButton' target='_blank' href='https://docs.google.com/spreadsheets/d/1AIh0D8fmpuUZYQ4RgVCN0uqSw4l-h0Tx13Q_hRhJegk/view'>View Teams</a>",
         "timezone": "Asia/Kathmandu",
-        "repeat": "none"        
+        "repeat": "none"
     }
 ]
